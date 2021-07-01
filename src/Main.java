@@ -3,7 +3,7 @@ import klassen.Zelle;
 
 public class Main {
     public static void main(String[] args) {
-        //Was geeeeeeeeeht
+        //Main Class
         SpielDesLebens spiel = new SpielDesLebens();
         spiel.dump();
         spiel.addZelle(new Zelle(new byte[]{5, 5}, spiel));
