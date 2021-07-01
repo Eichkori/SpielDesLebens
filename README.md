@@ -14,4 +14,4 @@ Das Makefile ist für Linux gemacht.
 * "make run" um auszuführen
 * "make prepare" benötigte Pakete installieren
 * "make clean" Alles weg was du nicht mehr brauchst
-* "make all" = prepare compile & runnn
+* "make all" = prepare compile & run
