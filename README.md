@@ -1,4 +1,4 @@
-# klassen.SpielDesLebens
+# SpielDesLebens
 Das ist einen Java Implementation von "Conways Spiel des Lebens" siehe [hier](https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens). <br>
 Das Spiel ist in einem 25x25 Raster aufgebaut.
 ## Regeln
