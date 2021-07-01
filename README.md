@@ -9,3 +9,9 @@ Das Spiel ist in einem 25x25 Raster aufgebaut.
 
 ## Infos
 Das Makefile ist für Linux gemacht.
+* "make install" erzeugt eine jar-Datei
+* "make compile" um zu kompilieren
+* "make run" um auszuführen
+* "make prepare" benötigte Pakete installieren
+* "make clean" Alles weg was du nicht mehr brauchst
+* "make all" = prepare compile & run
