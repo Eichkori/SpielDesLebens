@@ -1,4 +1,5 @@
-SOURCES = $(wildcard klassen/*.java)
+SOURCES = $(wildcard *.java)
+SOURCES += $(wildcard klassen/*.java)
 SOURCES_CLASS = $(SOURCES:.java=.class)
 JAVAC = javac
 
