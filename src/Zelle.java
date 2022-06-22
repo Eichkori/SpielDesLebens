@@ -1,4 +1,4 @@
-package klassen;
+package src;
 
 public class Zelle extends Thread {
 
