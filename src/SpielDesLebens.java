@@ -1,17 +1,12 @@
-package klassen;
+package src;
 
 import java.util.ArrayList;
-import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.Semaphore;
-import java.util.concurrent.ThreadPoolExecutor;
 
 public class SpielDesLebens {
-    private byte groesseRaster = 25;
-    private byte[][] feld = new byte[groesseRaster][groesseRaster];
-    private int maxAnzahlThreads= 1000;
-    private ThreadPoolExecutor threadPool;
-    private BlockingDeque<Runnable> blockingQueue;
-    static ArrayList<Zelle> allezellen = new ArrayList<>();
+    private byte field_size = 25;
+    private byte[][] feld = new byte[field_size][field_size];
+    static ArrayList<Zelle> all_zells = new ArrayList<>();
     public Semaphore available = new Semaphore(1, true);
 
 
@@ -22,14 +17,14 @@ public class SpielDesLebens {
 
     }
 
-    public void addZelle(Zelle z){
-        allezellen.add(z);
+    public void addZell(Zelle z){
+        all_zells.add(z);
         byte pos[] = z.getPosition();
         feld[pos[0]][pos[1]]= z.isAlivee()?(byte)1:(byte)0;
     }
 
     public void start(){
-        for (Zelle x :allezellen) {
+        for (Zelle x :all_zells) {
             x.start();
             //System.out.println(x+" gestartet");
         }
@@ -116,7 +111,7 @@ public class SpielDesLebens {
                 System.out.print( feld[i][j]+"  ");
             System.out.println();
         }
-        for (byte i = 0; i<groesseRaster*3;i++)
+        for (byte i = 0; i<field_size*3;i++)
             System.out.print("-");
         System.out.println();
     }

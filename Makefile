@@ -1,5 +1,4 @@
-SOURCES = $(wildcard *.java)
-SOURCES += $(wildcard klassen/*.java)
+SOURCES = $(wildcard src/*.java)
 SOURCES_CLASS = $(SOURCES:.java=.class)
 JAVAC = javac
 
@@ -13,7 +12,7 @@ compile: $(SOURCES)
 	$(JAVAC) $(SOURCES)
 
 run: compile 
-	java Main
+	java ./src/Main.java
 
 prepare:
 	sudo apt install openjdk-16-jdk-headless
